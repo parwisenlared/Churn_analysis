@@ -39,8 +39,8 @@ print("\n")
 print("Sample2 churn prediction is: " + pipe.predict(sample2))
 
 
-joblib.dump(pipe,"dtree_classifier3")
-dt = joblib.load("dtree_classifier3")
+joblib.dump(pipe,"dtree_classifier")
+dt = joblib.load("dtree_classifier")
 print("\n")
 print("Joblib prediction for sample 2: " + dt.predict(sample2))
 print("\n")
