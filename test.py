@@ -23,7 +23,7 @@ print(cross_val_score(pipe, X, y, cv=5, scoring='accuracy').mean())
 
 pipe.fit(X,y)
 
-sample1 = [3,'Yes', 'Yes', 'Yes', 'Yes', 'No', 'No']
+sample1 = [10,'No', 'No', 'No', 'Yes', 'No', 'No']
 sample1 = pd.DataFrame([sample1], columns = X.columns)
 
 print(pipe.predict(sample1))
